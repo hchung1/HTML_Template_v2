@@ -1,12 +1,15 @@
 from django.contrib import admin
-from .models import Members, Trips, Project
+from .models import Display, Member, Trip, Project
 
 
 # Register your models here.
-admin.site.register(Members)
+admin.site.register(Display)
 
 
-admin.site.register(Trips)
+admin.site.register(Member)
+
+
+admin.site.register(Trip)
 
 
 admin.site.register(Project)

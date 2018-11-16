@@ -1,34 +1,36 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Members, Trips, Project
+from .models import Display, Member, Trip, Project
 
 
 # Create your views here.
 class HomeView(generic.TemplateView):
+	model=Display
 	template_name = "home.html"
 
 
 class AboutView(generic.DetailView):
+	model=Display
 	template_name = 'about.html'
 
 
 class MembersListView(generic.ListView):
-	model=Members
+	model=Member
 	template_name = 'members_list.html'
 
 
 class MembersView(generic.DetailView):
-	model=Members
+	model=Member
 	template_name="members.html"
 
 
 class TripsListView(generic.ListView):
-	model=Trips
+	model=Trip
 	template_name = 'trips_list.html'
 
 
 class TripsView(generic.DetailView):
-	model=Trips
+	model=Trip
 	template_name="trips.html"
 
 
