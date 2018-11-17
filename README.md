@@ -6,5 +6,6 @@ Based off of origional html files from 'html_template' folder.
 Note All Images Comes from Pexels.
 
 Made With
-Database          Framework               Web
-SQLite3           Django(Python 3)        HTML, CSS
+
+Database----------Framework---------------Web
+SQLite3-----------Django(Python 3)--------HTML, CSS
