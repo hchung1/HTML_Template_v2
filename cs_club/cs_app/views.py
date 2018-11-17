@@ -4,12 +4,12 @@ from .models import Display, Member, Trip, Project
 
 
 # Create your views here.
-class HomeView(generic.TemplateView):
+class HomeView(generic.ListView):
 	model=Display
 	template_name = "home.html"
 
 
-class AboutView(generic.DetailView):
+class AboutView(generic.ListView):
 	model=Display
 	template_name = 'about.html'
 

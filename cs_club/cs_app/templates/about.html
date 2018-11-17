@@ -43,9 +43,9 @@
   <div class="main_content bodies" align="center">
     <br>
     <ul>
-      {% for home_obj in object_list %}
-        {% if home_obj.place == 'home' %}
-          <li><img src="{{home_obj.image}}" width="100" height="100"> {{ home_obj.text }}</li><br>
+      {% for about_obj in object_list %}
+        {% if about_obj.place == 'about' %}
+          <li><img src="{{about_obj.image}}" width="100" height="100"> {{ about_obj.text }}</li><br>
         {% endif %}
       {% endfor %}
     </ul>
